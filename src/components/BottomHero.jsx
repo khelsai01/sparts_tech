@@ -9,7 +9,9 @@ const BottomHero = () => {
     const settings = {
         dots: false,
         infinite: true,
+        autoplay: true,
         speed: 500,
+        autoplaySpeed: 2000,
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
@@ -44,16 +46,16 @@ const BottomHero = () => {
 
             <div className='w-[99%] m-auto'>
                 <div className='flex justify-end text-end'>
-                <h1 className= 'w-44 text-yellow-500 font-sans text-xl font-medium'>Happy Kids, Satisfied Parents!</h1>
+                <h1 className= 'w-[290px] text-yellow-500 font-sans text-4xl font-medium'>Happy Kids, Satisfied Parents!</h1>
                 </div>
           <div className="mt-4">
                   <Slider {...settings}>
                   {data.map((d) => (
   <div key={d.name} className="bg-white h-[33%] text-black rounded-xl">
     <div className='relative h-[100%] items-center rounded-t-xl'>
-      <img src='https://www.shutterstock.com/image-vector/classic-university-academy-institute-building-260nw-1830041018.jpg' alt="Happy Kids" className="w-[100%] h-48 rounded-xl object-cover" />
+      <img src={d.img} alt="Happy Kids" className="w-[100%] h-48 rounded-xl object-cover" />
       <div className='absolute bottom-2 right-2 z-10'>
-        <CgProfile className='text-2xl bg-transparent' />
+        <CgProfile className='text-3xl bg-gray-500 rounded-3xl text-white' />
       </div>
     </div>
   </div>
@@ -69,27 +71,27 @@ const BottomHero = () => {
     const data = [
       {
         name: `John Morgan`,
-        img: `/students/John_Morgan.jpg`,
+        img: `https://www.visualsstock.com/details_watermark.php?filename=51674`,
         review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
       },
       {
         name: `Ellie Anderson`,
-        img: `/students/Ellie_Anderson.jpg`,
+        img: `https://thumbs.dreamstime.com/b/happy-school-kids-studying-together-group-96291141.jpg`,
         review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
       },
       {
         name: `Nia Adebayo`,
-        img: `/students/Nia_Adebayo.jpg`,
+        img: `https://www.greatschools.org/gk/wp-content/uploads/2014/08/Preschool-social-studies-resized-750x325.jpg`,
         review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
       },
       {
         name: `Rigo Louie`,
-        img: `/students/Rigo_Louie.jpg`,
+        img: `https://epe.brightspotcdn.com/dims4/default/d9ca346/2147483647/strip/true/crop/5895x4000+0+0/resize/840x570!/quality/90/?url=https%3A%2F%2Fepe-brightspot.s3.us-east-1.amazonaws.com%2F80%2Fba%2Fbfde3f2b4212a3aff9f259ecd157%2F0124-preschool-q-a-1471858525.jpg`,
         review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
       },
       {
         name: `Mia Williams`,
-        img: `/students/Mia_Williams.jpg`,
+        img: `https://www.shutterstock.com/image-photo/group-multi-ethnic-kids-sitting-260nw-2073059288.jpg`,
         review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
       },
       

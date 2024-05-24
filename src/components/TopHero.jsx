@@ -7,7 +7,9 @@ const TopHero = () => {
     const settings = {
         dots: false,
         infinite: true,
+        autoplay: true,
         speed: 500,
+        autoplaySpeed: 2000,
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
@@ -41,13 +43,13 @@ const TopHero = () => {
           <div className='w-full h-96 bg-indigo-500 p-8'>
 
             <div className='w-[99%] m-auto mt-6'>
-                <h1 className= 'w-44 text-white font-sans text-xl font-medium  mx-2'>Explore Our Top Academies</h1>
+                <h1 className= 'w-[220px] text-white font-sans text-3xl font-medium  mx-2'>Explore Our Top Academies</h1>
           <div className="mt-4">
                   <Slider {...settings}>
             {data.map((d) => (
               <div key={d.name} className="bg-white h-[33%] text-black rounded-xl">
                 <div className='h-[100%] flex justify-center items-center rounded-t-xl'>
-                  <img src='https://www.shutterstock.com/image-vector/classic-university-academy-institute-building-260nw-1830041018.jpg' alt="Acadmice" className="w-[100%] h-48 rounded-xl  object-cover"/>
+                  <img src={d.img} alt="Acadmice" className="w-[100%] h-48 rounded-xl  object-cover"/>
                 </div>
     
               
@@ -63,28 +65,28 @@ const TopHero = () => {
     
     const data = [
       {
-        name: `John Morgan`,
-        img: `/students/John_Morgan.jpg`,
+        name: `Morgan School`,
+        img: `https://i.pinimg.com/474x/1b/e3/8d/1be38d47bf8a2cf4a5c66403db36c53a.jpg`,
         review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
       },
       {
-        name: `Ellie Anderson`,
-        img: `/students/Ellie_Anderson.jpg`,
+        name: `Kidzee School`,
+        img: `https://www.commercialdesignindia.com/cloud/2021/11/26/uvVIVse0-kidzee-school-Ar-Sumit-Dhawan2-2.jpg`,
         review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
       },
       {
-        name: `Nia Adebayo`,
-        img: `/students/Nia_Adebayo.jpg`,
+        name: `Prabhat Kids School`,
+        img: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Mf53UNX2XKXA1Pr8Y92PCKH37zFAuE0WJRwNrPq1cw&s`,
         review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
       },
       {
         name: `Rigo Louie`,
-        img: `/students/Rigo_Louie.jpg`,
+        img: `https://biblus.accasoftware.com/en/wp-content/uploads/sites/2/2018/10/Facciata_progetti-edifici-scolastici-Troplo-Kids_render_software-BIM-architettura_Edificius.jpg`,
         review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
       },
       {
         name: `Mia Williams`,
-        img: `/students/Mia_Williams.jpg`,
+        img: `https://cdn.firstcry.com/education/2022/10/16165436/A1.jpg`,
         review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
       },
       
