@@ -2,8 +2,10 @@ import React from 'react'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
+import { CgProfile } from "react-icons/cg";
 
-const TopHero = () => {
+
+const BottomHero = () => {
     const settings = {
         dots: false,
         infinite: true,
@@ -38,21 +40,24 @@ const TopHero = () => {
           ]
       };
     return (
-          <div className='w-full h-96 bg-indigo-500 p-8'>
+          <div className='w-full h-80 bg-gray-200 p-8'>
 
-            <div className='w-[99%] m-auto mt-6'>
-                <h1 className= 'w-44 text-white font-sans text-xl font-medium  mx-2'>Explore Our Top Academies</h1>
+            <div className='w-[99%] m-auto'>
+                <div className='flex justify-end text-end'>
+                <h1 className= 'w-44 text-yellow-500 font-sans text-xl font-medium'>Happy Kids, Satisfied Parents!</h1>
+                </div>
           <div className="mt-4">
                   <Slider {...settings}>
-            {data.map((d) => (
-              <div key={d.name} className="bg-white h-[33%] text-black rounded-xl">
-                <div className='h-[100%] flex justify-center items-center rounded-t-xl'>
-                  <img src='https://www.shutterstock.com/image-vector/classic-university-academy-institute-building-260nw-1830041018.jpg' alt="Acadmice" className="w-[100%] h-48 rounded-xl  object-cover"/>
-                </div>
-    
-              
-              </div>
-            ))}
+                  {data.map((d) => (
+  <div key={d.name} className="bg-white h-[33%] text-black rounded-xl">
+    <div className='relative h-[100%] items-center rounded-t-xl'>
+      <img src='https://www.shutterstock.com/image-vector/classic-university-academy-institute-building-260nw-1830041018.jpg' alt="Happy Kids" className="w-[100%] h-48 rounded-xl object-cover" />
+      <div className='absolute bottom-2 right-2 z-10'>
+        <CgProfile className='text-2xl bg-transparent' />
+      </div>
+    </div>
+  </div>
+))}
           </Slider>
           </div>
           
@@ -90,4 +95,4 @@ const TopHero = () => {
       
     ];
     
-export default TopHero
+export default BottomHero;
