@@ -42,7 +42,7 @@ const BottomHero = () => {
           ]
       };
     return (
-          <div className='w-full h-80 bg-gray-200 p-8'>
+          <div className='w-full h-88 bg-gray-200 p-10'>
 
             <div className='w-[99%] m-auto'>
                 <div className='flex justify-end text-end'>

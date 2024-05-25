@@ -6,7 +6,7 @@ import Footer from './Footer'
 
 const Home = () => {
   return (
-    <div >
+    <div className='flex flex-col gap-0 relative'>
           <Header />
           <TopHero />
           <BottomHero />

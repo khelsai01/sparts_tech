@@ -40,7 +40,7 @@ const TopHero = () => {
           ]
       };
     return (
-          <div className='w-full h-96 bg-indigo-500 p-8'>
+          <div className='w-full h-96 bg-sky-300 p-8'>
 
             <div className='w-[99%] m-auto mt-6'>
                 <h1 className= 'w-[220px] text-white font-sans text-3xl font-medium  mx-2'>Explore Our Top Academies</h1>
