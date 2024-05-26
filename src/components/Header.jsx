@@ -16,7 +16,7 @@ const Header = () => {
             Find the Best<span>Activity for your</span>
             <span className="flex items-center">
               Child
-              <IoIosArrowDroprightCircle className="text-sky-300 ml-56" />
+              <IoIosArrowDroprightCircle className="text-sky-300 sm:ml-4 md:ml-44 lg:ml-56" />
             </span>
           </h1>
         </div>
