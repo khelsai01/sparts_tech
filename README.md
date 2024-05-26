@@ -68,3 +68,17 @@
 **Small Screen View**
 
 ![footerMobile](https://github.com/khelsai01/sparts_tech/assets/119441119/0c47159b-f38f-42ad-ae44-2e325c7695e2)
+
+## Local run by open terminal
+
+1. Clone the repository 
+`git clone https://github.com/khelsai01/sparts_tech.git`
+
+2. Move to folder
+  `cd sparts_tech`
+
+3. Install packages
+  `npm Install`
+
+4. Run the the code
+   `npm run start`
