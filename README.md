@@ -8,7 +8,7 @@
 
 ## Presentation Video
 
-[![Watch the video](https://github.com/khelsai01/sparts_tech/assets/119441119/4c285d24-6c2e-4174-ad67-0b8b4af30019)](https://drive.google.com/file/d/1H5qbggpxc0-O1DAqMEqX-mFpER29llaf/view?usp=sharing)
+[![Watch the video](https://github.com/khelsai01/sparts_tech/assets/119441119/4c285d24-6c2e-4174-ad67-0b8b4af30019)](https://drive.google.com/file/d/1ddh8jCIPlw971AkJx1yZnBHpEjbxnM9T/view?usp=sharing)
 
 
 ## Tech Stack use:
