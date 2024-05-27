@@ -16,7 +16,7 @@ const Header = () => {
 
       <div className="lg:flex  md:flex-row justify-between h-[100%] md:h-[80%] z-0">
         <div id="heading" className="w-[70%] mx-24">
-          <h1 className="flex text-6xl text-start flex-col gap-2 mt-24 md:mt-44 lg:mt-20 xl:mt-24 overflow-hidden transition-all duration-1000 transform translate-x-0 lg:hover:translate-x-20">
+          <h1 className="flex text-6xl text-start flex-col gap-2 mt-24 md:mt-44 lg:mt-20 xl:mt-24 overflow-hidden transition-all duration-1000 transform translate-x-0 hover:translate-x-20">
             Find the Best<span>Activity for your</span>
             <span className="flex items-center">
               Child
