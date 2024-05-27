@@ -16,7 +16,7 @@
 */
 
 .first-letter-color:hover::first-letter {
-    color: #FFA500; /* Orange color */
+    color: #FFA500; 
     font-size: 4rem;
   }
 

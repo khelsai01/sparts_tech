@@ -1,5 +1,7 @@
 # SpArts tech
 
+SpArts is application where you can see the best acedemice for the you childern. Here you can choose the your holistic development of your children and easy to sortout your kid's school.
+
 ## Vercel deployed link
 [https://sparts-tech.vercel.app](https://sparts-tech.vercel.app)
 
