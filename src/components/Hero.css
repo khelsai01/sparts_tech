@@ -1,0 +1,22 @@
+
+
+
+/*
+ .slick-prev, .slick-next {
+  width: 40px; 
+  height: 40px; 
+  background-color: rgb(253, 209, 66); 
+  border-radius: 50%;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background-color: rgb(251, 207, 125); 
+}  
+
+*/
+
+.first-letter-color:hover::first-letter {
+    color: #FFA500; /* Orange color */
+    font-size: 4rem;
+  }
+

@@ -15,26 +15,34 @@ const Header = () => {
       </div>
 
       <div className="lg:flex  md:flex-row justify-between h-[100%] md:h-[80%] z-0">
-        <div className="w-[70%] mx-24">
-          <h1 className="flex text-6xl text-start flex-col gap-2 mt-24 md:mt-44 lg:mt-20 xl:mt-24">
+        <div id="heading" className="w-[70%] mx-24">
+          <h1 className="flex text-6xl text-start flex-col gap-2 mt-24 md:mt-44 lg:mt-20 xl:mt-24 overflow-hidden transition-all duration-1000 transform translate-x-0 lg:hover:translate-x-20">
             Find the Best<span>Activity for your</span>
             <span className="flex items-center">
               Child
-              <IoIosArrowDroprightCircle className="text-sky-300 sm:ml-4 md:ml-44  lg:ml-44 xl:ml-64" />
+              <IoIosArrowDroprightCircle className="text-sky-300 sm:ml-4 md:ml-44  lg:ml-44 xl:ml-64 hover:text-sky-600" />
             </span>
           </h1>
         </div>
 
-        <div className="hidden lg:flex gap-0">
-          <img src="./football.png" alt="spArts" className="w-[60%]" />
-          <img src="./guitar.png" alt="spArts" className="w-[40%]" />
+        <div className="hidden lg:flex gap-0 ">
+          <img
+            src="./football.png"
+            alt="spArts"
+            className="w-[60%] hover:-translate-x-4"
+          />
+          <img
+            src="./guitar.png"
+            alt="spArts"
+            className="w-[40%] hover:-translate-x-4"
+          />
         </div>
       </div>
       <div className="sm:w-1/2 md:w-[60%] flex flex-col md:flex-row lg:flex-row justify-center items-center gap-10 lg:gap-10 sm:gap-2 mx-auto md:mt-10 z-0">
-        <button className="bg-yellow-500 p-2 px-12 rounded-3xl text-white font-medium w-full md:w-full sm:w-1/2 lg:w-auto">
+        <button className="bg-yellow-500 hover:bg-orange-500  p-2 px-12 hover:px-16 rounded-3xl text-white font-medium w-full md:w-full sm:w-1/2 lg:w-auto">
           For Academies
         </button>
-        <button className="bg-yellow-500 p-2 px-6 rounded-3xl text-white font-medium w-full md:w-full sm:w-1/2 lg:w-auto">
+        <button className="bg-yellow-500 hover:bg-orange-500  p-2 px-6 hover:px-10 rounded-3xl text-white font-medium w-full md:w-full sm:w-1/2 lg:w-auto">
           SpArts in your home
         </button>
       </div>
