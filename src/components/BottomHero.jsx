@@ -1,24 +1,27 @@
-import React from "react";
+import React, { useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { CgProfile } from "react-icons/cg";
 
 const BottomHero = ({ students }) => {
+  const sliderRef = useRef(null);
+
   const settings = {
     dots: false,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     speed: 500,
     autoplaySpeed: 2000,
     slidesToShow: 4,
     slidesToScroll: 1,
+
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
         },
@@ -27,8 +30,7 @@ const BottomHero = ({ students }) => {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToScroll: 1,
         },
       },
       {
@@ -40,6 +42,15 @@ const BottomHero = ({ students }) => {
       },
     ],
   };
+
+  const handleMouseEnter = () => {
+    sliderRef.current.slickPlay();
+  };
+
+  const handleMouseLeave = () => {
+    sliderRef.current.slickPause();
+  };
+
   return (
     <div className="w-full h-88 bg-gray-200 p-10">
       <div className="w-[99%] m-auto">
@@ -49,11 +60,13 @@ const BottomHero = ({ students }) => {
           </h1>
         </div>
         <div className="mt-4">
-          <Slider {...settings}>
+          <Slider ref={sliderRef} {...settings}>
             {students?.map((d) => (
               <div
                 key={d.id}
                 className="bg-white h-[33%] text-black rounded-xl"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
                 <div className="relative h-[100%] items-center rounded-t-xl">
                   <img

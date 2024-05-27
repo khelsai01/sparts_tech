@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const TopHero = ({ institutes }) => {
+  const sliderRef = useRef(null);
+
   const settings = {
     dots: false,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     speed: 500,
     autoplaySpeed: 2000,
     slidesToShow: 4,
@@ -39,6 +41,15 @@ const TopHero = ({ institutes }) => {
       },
     ],
   };
+
+  const handleMouseEnter = () => {
+    sliderRef.current.slickPlay();
+  };
+
+  const handleMouseLeave = () => {
+    sliderRef.current.slickPause();
+  };
+
   return (
     <div className="w-full h-96 bg-sky-300 p-8">
       <div className="w-[99%] m-auto mt-6">
@@ -46,17 +57,19 @@ const TopHero = ({ institutes }) => {
           Explore Our Top Academies
         </h1>
         <div className="mt-4">
-          <Slider {...settings}>
+          <Slider ref={sliderRef} {...settings}>
             {institutes?.map((d) => (
               <div
                 key={d.id}
                 className="bg-white h-[33%] text-black rounded-xl"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
                 <div className="h-[100%] flex justify-center items-center rounded-t-xl">
                   <img
                     src={d.image}
                     alt="Academies"
-                    className="w-[100%] h-48 rounded-xl  object-cover"
+                    className="w-[100%] h-48 rounded-xl object-cover"
                   />
                 </div>
               </div>
