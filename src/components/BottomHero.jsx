@@ -69,11 +69,11 @@ const BottomHero = ({ students }) => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-                <div className="h-[100%] flex justify-center items-center rounded-t-xl overflow-hidden transform transition-transform duration-300 group-hover:scale-110 relative">
+                <div className="h-[100%] flex justify-center items-center rounded-t-xl overflow-hidden transform transition-transform">
                   <img
                     src={d.image}
                     alt="Student"
-                    className="w-[100%] h-56 rounded-xl object-cover"
+                    className="w-[100%] h-56 rounded-xl object-cover  hover:scale-125 duration-1000"
                   />
                   <div className="absolute bottom-2 right-2 z-10">
                     <CgProfile className="text-3xl bg-gray-500 rounded-3xl text-white" />

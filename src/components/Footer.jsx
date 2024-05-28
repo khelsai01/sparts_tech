@@ -5,8 +5,10 @@ const Footer = () => {
     <div className="bg-yellow-500 h-72 font-serif flex justify-center items-center">
       <div className=" w-[50%]">
         <div className="text-center text-white mb-4">
-          <h1 className="font-medium text-[2rem]">Stay Updated</h1>
-          <p className="text-[1.1rem]">
+          <h1 className="font-medium text-[2rem] duration-1000 hover:scale-125">
+            Stay Updated
+          </h1>
+          <p className="text-[1.1rem] duration-1000 hover:scale-125">
             Get the latest updates on academics new you!
           </p>
         </div>
